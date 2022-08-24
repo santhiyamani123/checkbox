@@ -1,4 +1,19 @@
-<div class="container">
+
+<!-- <app-register></app-register> -->
+
+<app-carousels [images]="images"
+[autoSlide]="false"></app-carousels>
+
+<!-- <app-imageslider></app-imageslider> -->
+
+<!-- <div>
+  <p>Random Number from child component:{{randomNumber||'Not yet generate'}}</p>
+  <app-share [subjectChild]="subjectParent"
+  (numberGenerated1)="onNumberGenerate($event)"></app-share>
+</div> -->
+
+
+ <!-- <div class="container">
 
   <h1>Select Your Role</h1>
 
@@ -22,6 +37,8 @@
     <li *ngFor="let tech of selectedCheckBoxList">{{tech}}</li>
   </ul>
 </div>
+
+</div> -->
   <!-- <form [formGroup]="form" (ngSubmit)="submit()">
 
           
@@ -50,4 +67,5 @@
 
   </form> -->
 
-</div>
+
+

@@ -1,0 +1,10 @@
+<p>share works!</p>
+
+<div>
+    <tr *ngFor="let subject of subjectChild">
+        <td>{{subject.id}}</td>
+        <td>{{subject.name}}</td>
+    </tr>
+</div>
+
+<button class="btn btn-warning" (click)="generatenumber()">Fire Event</button>
