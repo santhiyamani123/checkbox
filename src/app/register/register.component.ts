@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { MathsService } from '../services/maths.service';
 
 @Component({
   selector: 'app-register',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _maths:MathsService) { }
 
   registerForm : any;
 
@@ -65,6 +66,11 @@ export class RegisterComponent implements OnInit {
   get mobilenumber()
   {
     return this.registerForm.get('mobileNumber');
+  }
+
+  Increase()
+  {
+    this._maths.addOne();
   }
 
 }

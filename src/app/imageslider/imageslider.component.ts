@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { MathsService } from '../services/maths.service';
 
 @Component({
   selector: 'app-imageslider',
   templateUrl: './imageslider.component.html',
-  styleUrls: ['./imageslider.component.scss']
+  styleUrls: ['./imageslider.component.scss'],
+  providers: [MathsService]
 })
 export class ImagesliderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _maths:MathsService) { }
 
   ngOnInit(): void {
   }
@@ -57,5 +59,9 @@ export class ImagesliderComponent implements OnInit {
     }
     
 ];
+
+Increase(){
+  this._maths.addOne();
+}
 
 }

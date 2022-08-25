@@ -21,6 +21,8 @@ export class CarouselsComponent implements OnInit {
 
  selectedIndex=0;
 
+ 
+
 
   ngOnInit(): void {
 
@@ -65,6 +67,8 @@ export class CarouselsComponent implements OnInit {
     }
 
   }
+
+
 
 
 }

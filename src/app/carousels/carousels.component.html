@@ -1,9 +1,11 @@
 <p>carousels works!</p>
 
+
 <div *ngIf="images && images.length > 0" class="carousel-container">
-    <div *ngFor="let image of images; let i=index"
+    <img *ngFor="let image of images; let i=index"
+    [src]="image.imageSrc" [alt]="image.imageAlt"
     [ngClass]="{'image-active':selectedIndex===i}"
-    class="fade">{{image.imageSrc}}</div>
+    class="fade">
 
  <div *ngIf="indicators" class="carousel-dot-container">
     <span *ngFor="let dot of images; let i=index"

@@ -1,5 +1,15 @@
 <p>register works!</p>
 
+<br>
+
+<div>
+    <p>
+        counter={{_maths.counter}}
+    </p>
+</div>
+<button class="btn btn-warning" (click)="Increase()">Increase</button>
+<br/>
+
 <div class="container mt-5">
 <form class="content" [formGroup]="registerForm" (ngSubmit)="submitData()">
     <h3>Register Form</h3>

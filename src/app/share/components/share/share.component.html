@@ -1,5 +1,15 @@
 <p>share works!</p>
 
+<br>
+
+<div>
+    <p>
+        counter={{ _maths.counter }}
+    </p>
+</div>
+<button class="btn btn-warning" (click)="Increase()">Increase</button>
+<br/>
+
 <div>
     <tr *ngFor="let subject of subjectChild">
         <td>{{subject.id}}</td>
