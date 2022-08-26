@@ -13,6 +13,7 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { CarouselsModule } from './carousels/carousels.module';
 import { MathsService } from './services/maths.service';
+import { ObsOperatorsComponent } from './obs-operators/obs-operators.component';
 
 
 
@@ -21,7 +22,8 @@ import { MathsService } from './services/maths.service';
   declarations: [
     AppComponent,
     RegisterComponent,
-    ImagesliderComponent
+    ImagesliderComponent,
+    ObsOperatorsComponent
   ],
   imports: [
     BrowserModule,

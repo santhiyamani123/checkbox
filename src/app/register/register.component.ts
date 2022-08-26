@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Observable, Subscription } from 'rxjs';
 import { MathsService } from '../services/maths.service';
 
 @Component({
@@ -8,6 +9,8 @@ import { MathsService } from '../services/maths.service';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
+
+  myDestroy: Subscription | undefined;
 
   constructor(public _maths:MathsService) { }
 
@@ -32,7 +35,39 @@ export class RegisterComponent implements OnInit {
         Validators.required,
         Validators.pattern('[0-9]*')
       ])
-    })
+    });
+
+    const myObs$ = new Observable(obs => {
+      console.log("Start Observable");
+      obs.next('100');
+      obs.next('200');
+      // obs.error("Not Working");
+      obs.next('300');
+      // obs.complete();
+
+      setTimeout(() => {
+        obs.next('400');
+      }, 1000);
+      
+      console.log("End Observable");
+    });
+
+    this.myDestroy = myObs$.subscribe(sub=>
+      {
+      console.log('First ' + sub);
+    },
+    error => {
+      console.log("Error " + error);
+    },
+    () => {
+      console .log("Completed");
+    }
+    );
+
+    this.myDestroy.unsubscribe();
+
+
+
   }
 
   //sumbit function
