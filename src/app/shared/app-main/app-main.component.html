@@ -1,0 +1,20 @@
+<p>app-main works!</p>
+
+<br>
+
+<div>
+    <p>
+        counter={{ _maths.counter }}
+    </p>
+</div>
+<button class="btn btn-warning" (click)="Increase()">Increase</button>
+<br/>
+
+<div>
+    <tr *ngFor="let subject of subjectChild">
+        <td>{{subject.id}}</td>
+        <td>{{subject.name}}</td>
+    </tr>
+</div>
+
+<button class="btn btn-warning" (click)="generatenumber()">Fire Event</button>

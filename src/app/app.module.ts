@@ -14,6 +14,9 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { CarouselsModule } from './carousels/carousels.module';
 import { MathsService } from './services/maths.service';
 import { ObsOperatorsComponent } from './obs-operators/obs-operators.component';
+import { HomeComponent } from './home/home.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { ContactmeComponent } from './contactme/contactme.component';
 
 
 
@@ -23,7 +26,10 @@ import { ObsOperatorsComponent } from './obs-operators/obs-operators.component';
     AppComponent,
     RegisterComponent,
     ImagesliderComponent,
-    ObsOperatorsComponent
+    ObsOperatorsComponent,
+    HomeComponent,
+    AboutmeComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,18 @@
 
-<app-obs-operators></app-obs-operators>
+<!-- <app-obs-operators></app-obs-operators> -->
 
-<app-register></app-register>
+<!-- <app-register></app-register> -->
 
 <!-- <app-carousels [images]="images"
 [autoSlide]="false"></app-carousels> -->
 
-<app-imageslider></app-imageslider>
+<!-- <app-imageslider></app-imageslider> -->
 
-<div>
+<!-- <div>
   <p>Random Number from child component:{{randomNumber||'Not yet generate'}}</p>
   <app-share [subjectChild]="subjectParent"
   (numberGenerated1)="onNumberGenerate($event)"></app-share>
-</div>
+</div> -->
 
 
  <!-- <div class="container">
@@ -69,5 +69,43 @@
 
   </form> -->
 
+
+  <h3>Learning Routing Task</h3>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+        <ul class="nav nav-tabs">
+          <li class="nav-items" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+            <a class="active" routerLink="/">Home</a>
+          </li>
+          &nbsp;
+          <li class="nav-items" routerLinkActive="active">
+            <a class="" routerLink="/aboutme">About Me</a>
+          </li>
+          &nbsp;
+          <li class="nav-items" routerLinkActive="active">
+            <a class="" routerLink="/contactme">Contact Me</a>
+          </li>
+          &nbsp;
+        </ul>
+
+      </div>
+
+    </div>
+
+  
+
+  <div class="row">
+    <div class="col-sm-12">
+       <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+
+</div>
+
+  
 
 
