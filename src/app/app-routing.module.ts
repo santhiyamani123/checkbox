@@ -20,7 +20,11 @@ const routes: Routes = [
   { path: 'imageslider', component: ImagesliderComponent },
   { path: 'obsoperators', component: ObsOperatorsComponent},
   { path: 'register', component: RegisterComponent },
-  { path: 'passingdata', component: AppMainComponent }
+  { path: 'passingdata', component: AppMainComponent },
+  {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then(m =>m.BlogModule)
+  }
   
 ];
 
