@@ -17,6 +17,7 @@ import { ObsOperatorsComponent } from './obs-operators/obs-operators.component';
 import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactmeComponent } from './contactme/contactme.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -29,7 +30,8 @@ import { ContactmeComponent } from './contactme/contactme.component';
     ObsOperatorsComponent,
     HomeComponent,
     AboutmeComponent,
-    ContactmeComponent
+    ContactmeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

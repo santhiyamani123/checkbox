@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { MathsService } from '../services/maths.service';
 
 @Component({
@@ -9,9 +10,11 @@ import { MathsService } from '../services/maths.service';
 })
 export class ImagesliderComponent implements OnInit {
 
-  constructor(public _maths:MathsService) { }
+  constructor(private ActivatedRoute: ActivatedRoute, public _maths:MathsService) { }
 
   ngOnInit(): void {
+
+    console.log(this.ActivatedRoute.snapshot.data);
   }
 
   imgCollection: Array<object> = [
