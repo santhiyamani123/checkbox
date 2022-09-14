@@ -1,0 +1,25 @@
+<p>userdetails works!</p>
+
+<h2>{{userDetails.name}}</h2>
+
+<h2>{{userDetails.designation}}</h2>
+
+<h2>{{userDetails.education}}</h2>
+
+<h2>{{userDetails.experience}}</h2>
+
+<h2>{{userDetails.dob}}</h2>
+
+<h2>{{userDetails.mobile}}</h2>
+
+<h2>{{userDetails.email}}</h2>
+
+<h2>{{userDetails.location}}</h2>
+
+<div>
+    <ul>
+        <li *ngFor="let detail of userDetails.details">
+            {{ detail.proofname }} {{ detail.no }}
+        </li>
+    </ul>
+</div>

@@ -21,6 +21,7 @@ import { SearchComponent } from './search/search.component';
 import { AppMainComponent } from './shared/app-main/app-main.component';
 import { SuperAdminGuard } from './super-admin.guard';
 import { UnsavedGuard } from './unsaved.guard';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'aboutme', component: AboutmeComponent },
   { path: 'contactme', component: ContactmeComponent },
   { path: 'carousels', component: CarouselsComponent },
+  { path:'userdetail',component:UserdetailsComponent},
 
   //Resolver data is loaded before route is activated
 

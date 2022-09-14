@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { SearchComponent } from './search/search.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 
 
 
@@ -31,7 +32,8 @@ import { SearchComponent } from './search/search.component';
     HomeComponent,
     AboutmeComponent,
     ContactmeComponent,
-    SearchComponent
+    SearchComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
