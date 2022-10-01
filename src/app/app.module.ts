@@ -19,6 +19,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { SearchComponent } from './search/search.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 
@@ -33,7 +34,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     AboutmeComponent,
     ContactmeComponent,
     SearchComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
